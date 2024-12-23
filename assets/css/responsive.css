@@ -175,6 +175,21 @@
         width: 90%;
         text-align: center;
     }
+
+    /* Team Block */
+    .team__list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    /* Install Block */
+    .install__img {
+        display: none;
+    }
+
+    .install__content {
+        max-width: 100%;
+    }
 }
 
 /* Tablet */
