@@ -142,6 +142,39 @@
 
         text-align: start;
     }
+
+    /* Work Block */
+    .work__list {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* About Block */
+    .about-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about__media {
+        width: 100%;
+    }
+
+    .about__img--large {
+        width: 100%;
+
+        border-radius: 15px;
+
+        margin: 25px auto;
+    }
+
+    .about__img--small {
+        display: none;
+    }
+
+    .about-content {
+        width: 90%;
+        text-align: center;
+    }
 }
 
 /* Tablet */
