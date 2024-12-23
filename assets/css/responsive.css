@@ -106,6 +106,42 @@
 
         color: #fff;
     }
+
+    /* Hero Block */
+    .hero {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .hero__content {
+        order: 2;
+
+        max-width: 80%;
+        text-align: center;
+        margin: 22px auto;
+    }
+
+    .hero__media {
+        order: 1;
+    }
+
+    /* Service Block */
+    .service__row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service__list {
+        text-align: center;
+    }
+
+    .service-item {
+        width: 90%;
+
+        margin: 0 auto;
+
+        text-align: start;
+    }
 }
 
 /* Tablet */
@@ -117,8 +153,6 @@
 }
 
 /* Tạm ẩn phần không liên quan */
-.hero,
-.footer,
-main {
+.footer {
     display: none;
 }
