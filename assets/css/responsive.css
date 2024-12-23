@@ -1,5 +1,8 @@
 /* PC */
 @media (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
 }
 
 /* Tablet & Mobile */
@@ -53,6 +56,55 @@
     .menu-checkbox:checked ~ .menu-overlay {
         opacity: 1;
         visibility: visible;
+    }
+
+    /* 6. Code cho menu drawer */
+    .menu-drawer {
+        position: fixed;
+
+        background-color: #2e1919;
+
+        inset: 0 40% 0 0;
+
+        z-index: 2;
+
+        transform: translateX(-100%);
+
+        transition: 0.5s;
+
+        padding: 60px;
+    }
+
+    /* 7. Kiểm tra nếu checkbox được check hiện menu */
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    /* 8. Menu Top */
+    .menu-drawer__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #nav-bar__list--mobile {
+        margin-top: 25px;
+    }
+
+    #nav-bar__list--mobile .nav-bar__link {
+        width: 100%;
+
+        font-size: 2rem;
+    }
+
+    #nav-bar__list--mobile .nav-bar__link:hover {
+        background-color: #00ffff37;
+    }
+
+    .close__menu {
+        width: 24px;
+
+        color: #fff;
     }
 }
 
